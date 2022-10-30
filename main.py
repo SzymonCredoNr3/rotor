@@ -15,26 +15,31 @@ class Rotor(BoxLayout):
         button1.bind(on_press=self._button_action)
         self.add_widget(button1)
 
-        self.main_label = Label(text=f"{self.degree}°")
-        self.add_widget(self.main_label)
+        main_label = self.main_label = Label(text=f"{self.degree}°")
+
+        self.add_widget(main_label)
 
         button2 = Button(text=">")
         button2.bind(on_press=self._button_action)
 
         self.add_widget(button2)
-    def _button_action(self, instanse: Button):
+    def _button_action(self, instance: Button):
         """
             on click action of all buttons, change the value of number in this.main_label
         """
-        if instanse.text == "<":
+        if instance.text == "<":
             direction = -1
         else:
             direction = 1
         self.degree += direction
+        # loop adding degrees
+        if self.degree == 361:
+            self.degree = 1
+        if self.degree == -1:
+            self.degree = 359
         self.main_label.text = f"{self.degree}°"
 
 class MyApp(App):
-
     def build(self):
         self.root = root = Rotor()
         return root
