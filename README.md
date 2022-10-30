@@ -1,6 +1,7 @@
 # rotor
 Projekt aplikacji rotora
 data: 30,10,2022 (przepraszam za opóźnienie praktyki były bardzo intensywne (: ) 
+
 Treść Polecenia:
 
 Wykonaj aplikację mobilną do sterowania rotorem sieciowo:
@@ -14,6 +15,7 @@ Naciśnięcie przycisk i zmienia wyświetlany kąt.
 Poprawne wykonanie punktu 1 daje ocenę dobrą a 1 i 2 ocenę bardzo dobrą. 1,2,3 to ocena celująca.
 
 Autor: Szymon Credo
+
 Motto Projektu: 
   "Dziw miłosci się nam nie iści, żę muszę kochać przedmiot nienawiści"
   ~ W. Shakespeare
